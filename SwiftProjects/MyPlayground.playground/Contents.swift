@@ -46,3 +46,83 @@ let ikinciSet : Set = [50,60,70]
 
 let birlesimSeti = birinciSet.union(ikinciSet)
 
+
+// Dictionary
+
+let meyveDizisi=["Armut","muz","elma","karrpuz"]
+let kaloriDizisi=[100,150,120,300]
+
+meyveDizisi[2]
+kaloriDizisi[2]
+
+var meyveKaloriDictinory=["Armut":100, "Muz": 150, "Elma": 120,"Karpuz":300]
+
+meyveKaloriDictinory["Armut"]
+meyveKaloriDictinory.keys
+meyveKaloriDictinory.values
+
+meyveKaloriDictinory["Muz"] = 200
+
+
+//Loops (Donguler)
+
+var x = 0
+
+x += 1
+
+x = 0
+
+print("dongu basladı")
+while x < 10 {
+    print(x)
+    x += 1
+}
+print("dongu bitti")
+
+//For Loop
+
+var myArray=["Atıl","Mahmut","Mehmet","Zeynep"]
+
+for isim in myArray{
+    print(isim.uppercased())
+}
+
+var numaraDizisi=[10,20,30,40,50,60,70,80,90]
+
+for num in numaraDizisi {
+    print(num / 5*3)
+}
+
+// If Kontrolleri (If Statments) Eger
+
+var benimYasim = 100
+
+if benimYasim < 20 {
+    print("cok gençsin")
+} else if benimYasim > 20 && benimYasim < 30 {
+    print("yirmili yaslarındasın")
+} else if benimYasim > 30 && benimYasim < 40 {
+    print("otuzlu yaslarındasın")
+}else {
+    print ("kırk yasından buyuksun")
+}
+
+//func
+func carpma (a: Int, b: Int)-> Int {
+    return a * b
+}
+
+var carpmaSonucu = carpma(a: 5, b: 8)
+print(carpmaSonucu)
+
+func logicFunction(x: Int, y: Int) -> Bool{
+    if x > y {
+        return true
+    }else{
+        return false
+    }
+}
+logicFunction(x: 1, y: 3)
+
+
+
